@@ -8,7 +8,7 @@ function Footer() {
 
     return (
         <footer className='main-footer'>
-            App desenvolvido por Vinicius Barreto
+            App desenvolvido por <strong>VINICIUS BARRETO</strong>
             <div className='footer-icons'>
                 <a href="https://www.youtube.com/c/DevSuperior" target ="_new">
                     <YoutubeIcon />

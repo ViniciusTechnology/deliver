@@ -11,7 +11,7 @@ type Props = {
 function ProductsList({ products, onSelectProduct, selectedProducts }: Props) {
 
     return (
-        <div className="class-list-container">
+        <div className="orders-list-container">
             <div className="orders-list-items">
                 {products.map(product => (
                     <Productcard

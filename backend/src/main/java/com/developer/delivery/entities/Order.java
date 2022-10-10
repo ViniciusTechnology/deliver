@@ -9,7 +9,7 @@ import java.util.Set;
 
 @Entity
 @Table(name = "tb_order")
-public class Order implements Serializable {
+public class  Order implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -84,6 +84,14 @@ public class Order implements Serializable {
 
     public void setStatus(OrderStatus status) {
         this.status = status;
+    }
+
+    public Double getTotal(){
+        double sum = 0.0;
+        for (Product p: products){
+            sum += p.getPrice();
+        }
+        return sum;
     }
 
     public Set<Product> getProducts() {
